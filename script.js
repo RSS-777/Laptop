@@ -1,4 +1,3 @@
-let startAnimation = false;
 let time = 0;
 let intervalAnimation;
 let intervalTime;
