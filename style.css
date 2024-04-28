@@ -1,0 +1,314 @@
+*{box-sizing:border-box}
+.wraper{
+    perspective: 2000px;
+    display: grid;
+    justify-content: center;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotateY(25deg) rotateX(-8deg);
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    backface-visibility: hidden;
+}
+
+.message {
+    position: absolute;
+    left: 50%;
+    top:  90%;
+    transform: translate( -50% , -50%);
+    z-index: 999;
+    color: rgb(255, 0, 0);
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* block monitor */
+.block-monitor{
+    width: 600px;
+    height: 400px;
+}
+.outline{
+    position:relative;
+    border-style: solid;
+    border-color: rgb(53, 53, 53);
+    border-color: url('./images/aluminy4.jpg');
+    border-width:30px 20px 40px 20px;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+.monitor{
+    background-image: url('./images/windows11_2.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.camera{
+    position: absolute;
+    top: -22px;
+    left: 48%;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(173, 173, 173, 0.407);
+    border-radius: 50%;
+    border: 1px solid rgb(79, 79, 79);
+    outline: 2px solid rgb(241, 238, 238);
+}
+.sensor{
+    position: absolute;
+    top: -19px;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: rgba(173, 173, 173, 0.407);
+    border-radius: 50%;
+    border: 1px solid rgb(79, 79, 79);
+}
+.emblem{
+    position:absolute;
+    bottom:-25px;
+    left:47%;
+    color:white;
+    text-shadow: 1px 1px 3px black;
+    
+}
+
+/* block processor  */
+.block-laptop{
+   transform: rotateX(75deg) translateZ(195px) translateY(150px);
+   position: relative;
+   width: 600px;
+   height: 400px;
+}
+.processor{
+    display: grid;
+    grid-template:   2fr 1fr/ minmax(50px, 100%);
+    padding-left: 30px;
+    padding-right: 30px;
+    position:relative;
+    border:5px solid black;
+    background-image:url(./images/aluminy4.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+.keyboard{
+    width: 100%;
+    height: 75%;
+    margin-top: 55px;
+    /* background-color: rgb(70, 70, 149); */
+    background-image:url(./images/aluminy4.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    box-shadow: 0 0 5px 0  rgb(45, 45, 45), 0 0 2px 0 rgb(38, 38, 38);
+    border-radius: 15px;
+}
+.touch-pad{
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(221, 218, 218);
+}
+
+/*block back left rigth bottom diteal monitor*/
+.monitor-back{
+    position:absolute;
+    top:0;
+    left: -310px;
+    border:5px solid black;
+    background-image:url(./images/aluminy4.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+    height: 400px;
+    width: 600px;
+    transform: translateZ(-10px) translateX( 310px);
+}
+.monitor-back > p{
+    position:absolute;
+    top:170px;
+    left:50px;
+    font-size: 24px;
+    color:white;
+    text-shadow: 1px 1px 3px black;
+    transform:rotateY(180deg)
+}
+.monitor-back-decoration{
+    width: 500px;
+    height: 10px;
+    border-radius: 0 0 10px 10px;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.4); 
+    position: absolute;
+    top:5px;
+    transform: rotateY(180deg) translateZ(10px) translateX(-50px);
+}
+.monitor-top{
+    position: absolute;
+    top:2px;
+    left:0;
+    width: 565px;
+    height:10px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform: translateX(18px) translateZ(-6px) translateY(-7px) rotateX(90deg);
+}
+.monitor-bottom{
+    position: absolute;
+    top:2px;
+    left:0;
+    width: 565px;
+    height:10px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform: translateX(18px) translateZ(-6px) translateY(392px) rotateX(90deg);
+}
+.monitor-left{
+    position: absolute;
+    top:2px;
+    left:0;
+    width: 370px;
+    height:10px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform: rotateZ(90deg) rotateX(90deg) translateY(-5px) translateX(192px) translateZ(-185px);
+}
+.monitor-right{
+    position: absolute;
+    top:2px;
+    right:0;
+    width: 370px;
+    height:10px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform: rotateZ(90deg) rotateX(-90deg) translateY(5px) translateX(192px) translateZ(-184px);
+}
+
+/*block back left rigth bottom diteal processor*/
+
+.processor-back{
+    position:absolute;
+    top:0;
+    left: -310px;
+    border:5px solid black;
+    background-image:url(./images/aluminy4.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+    height: 400px;
+    width: 600px;
+    transform: rotateX(75deg) translateZ(-205px) translateY(255px)translateX(310px);;
+}
+.processor-bottom{
+    position: absolute;
+    top:2px;
+    left: -295px;
+    width: 570px;
+    height:14px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform: translateZ(386px) translateY(499px) translateX(310px) rotateX(-15deg);
+}
+.processor-top{
+    position: absolute;
+    top:2px;
+    left: -295px;
+    width: 570px;
+    height:14px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform: translateZ(2px) translateY(396px) translateX(310px) rotateX(-15deg);
+}
+.processor-right{
+    position: absolute;
+    top:2px;
+    right: 25px;
+    width: 370px;
+    height:14px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform:  rotateX(-15deg) rotateY(90deg) translateY(382px) translateZ(210px) translateX(-301px);
+}
+.processor-right-slice-1{
+    position: absolute;
+    right: 0;
+    width: 5px;
+    height:14px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform:  translateY(-302px) translateZ(372px) translateX(1px) rotateY(7deg) rotateZ(-15deg);
+}
+.processor-right-slice-2{
+    position: absolute;
+    right: 0;
+    width: 5px;
+    height:14px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform:  translateY(-301px) translateZ(376px) translateX(0) rotateY(60deg) rotateZ(-15deg);
+}
+.processor-right-slice-2{
+    position: absolute;
+    right: 0;
+    width: 8px;
+    height:14px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform:  translateY(-300px) translateZ(380px) translateX(-1px) rotateY(50deg) rotateZ(-12deg) rotateX(-7deg);
+}
+.processor-right-slice-3{
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height:14px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform:  translateY(-299px) translateZ(385px) translateX(-7px) rotateY(20deg) rotateZ(-5deg) rotateX(-9deg);
+}
+.processor-left{
+    position: absolute;
+    top:2px;
+    left:0;
+    width: 370px;
+    height:14px ;
+    background-image:url(./images/aluminy4.jpg);
+    filter: brightness(0.7); 
+    background-repeat:no-repeat;
+    background-size:cover;
+    transform:  rotateX(-15deg) rotateY(-90deg) translateY(382px) translateZ(184px) translateX(301px);
+}
