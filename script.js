@@ -37,21 +37,21 @@ function active() {
     container.style.top = '0';
 };
 
-function animationFunc() {
-    clearInterval(intervalTime);
-    if (time === 0) {
-        intervalAnimation = setInterval(() => rotateLapTop({ keyCode: 39 }), 60);
-        clearInterval(intervalTime);
-    } else {
-        intervalTime = setInterval(() => {
-            time = time - 1;
-            console.log(time);
-            if (time === 0) {
-                intervalAnimation = setInterval(() => rotateLapTop({ keyCode: 39 }), 60);
-                clearInterval(intervalTime);
-            }
-        }, 1000)
-    }
-}
+// function animationFunc() {
+//     clearInterval(intervalTime);
+//     if (time === 0) {
+//         intervalAnimation = setInterval(() => rotateLapTop({ keyCode: 39 }), 60);
+//         clearInterval(intervalTime);
+//     } else {
+//         intervalTime = setInterval(() => {
+//             time = time - 1;
+//             console.log(time);
+//             if (time === 0) {
+//                 intervalAnimation = setInterval(() => rotateLapTop({ keyCode: 39 }), 60);
+//                 clearInterval(intervalTime);
+//             }
+//         }, 1000)
+//     }
+// }
 
-animationFunc()
+// animationFunc()
